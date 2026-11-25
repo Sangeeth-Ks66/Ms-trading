@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.S TRADING COMPANY | Wholesale Hardware, Sanitary Fittings, Glass & Construction Supplies</title>
+  <meta name="description" content="M.S TRADING COMPANY - Trusted wholesale supplier of sanitary fittings, architectural flat glass, hand tools, builders hardware, and construction supplies in Malappuram, Kerala. GSTIN: 32ABDFM9538P1ZO." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Meta Domain Verification Tag Slot -->
+  <!-- <meta name="facebook-domain-verification" content="PASTE_META_VERIFICATION_CODE_HERE" /> -->
+
+  <style>
+    /* CSS Reset & Variables */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F1F5F9;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --primary: #1D4ED8;
+      --primary-hover: #1E40AF;
+      --primary-light: #EFF6FF;
+      --border-color: #E2E8F0;
+      --border-strong: #CBD5E1;
+      --badge-bg: #E0E7FF;
+      --badge-text: #3730A3;
+      --success-bg: #DCFCE7;
+      --success-text: #166534;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.6;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    }
+
+    a:hover, a:focus-visible {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Sticky Header */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand-wordmark {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      text-decoration: none;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      font-size: 0.925rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 0.4rem 0.2rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .btn-nav-contact {
+      background-color: var(--primary);
+      color: #FFFFFF !important;
+      padding: 0.5rem 1rem !important;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-nav-contact:hover {
+      background-color: var(--primary-hover) !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 4rem 0 3rem 0;
+      border-bottom: 1px solid var(--border-color);
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-page) 100%);
+    }
+
+    .hero-badge-container {
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.4rem 0.85rem;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      border-radius: 9999px;
+      border: 1px solid rgba(55, 48, 163, 0.15);
+    }
+
+    .hero-headline {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+      max-width: 950px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-subtext {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 880px;
+      margin-bottom: 2rem;
+    }
+
+    /* Quick Statutory Pill Bar */
+    .statutory-pill-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.75rem;
+      background-color: var(--bg-card-subtle);
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .stat-pill strong {
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .stat-pill .code-val {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 4rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-tag {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 1.875rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 720px;
+    }
+
+    /* Wholesale Products Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .product-card-top {
+      margin-bottom: 1.5rem;
+    }
+
+    .product-index {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .product-desc {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .product-card-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .product-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background-color: var(--bg-card-subtle);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .product-action-link {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.7;
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .highlight-card {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--primary);
+      padding: 1.25rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .highlight-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.25rem;
+    }
+
+    .highlight-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Registered Business & Statutory Information Card */
+    .verification-section {
+      background-color: var(--bg-page);
+    }
+
+    .verification-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .card-banner {
+      background: linear-gradient(90deg, #1E3A8A 0%, var(--primary) 100%);
+      color: #FFFFFF;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .card-banner h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .banner-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .dl-statutory-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      padding: 2.25rem 2rem;
+    }
+
+    .dl-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+    }
+
+    .dl-item.full-width {
+      grid-column: 1 / -1;
+    }
+
+    dt {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    dd {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    dd address {
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+
+    .mono-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.05em;
+    }
+
+    /* Contact & B2B Inquiry Box */
+    .contact-cta-box {
+      margin-top: 2rem;
+      background-color: var(--primary-light);
+      border: 1px solid #BFDBFE;
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .cta-text h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.25rem;
+    }
+
+    .cta-text p {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-action-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--primary);
+      color: #FFFFFF !important;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-action-primary:hover {
+      background-color: var(--primary-hover) !important;
+      text-decoration: none;
+    }
+
+    .btn-action-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #FFFFFF;
+      color: var(--text-main) !important;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      border: 1px solid var(--border-strong);
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-action-secondary:hover {
+      background-color: var(--bg-card-subtle) !important;
+      border-color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    /* Global Footer */
+    footer.site-footer {
+      margin-top: auto;
+      background-color: #0B1120;
+      color: #94A3B8;
+      border-top: 1px solid #1E293B;
+      padding: 3.5rem 0 2rem 0;
+      font-size: 0.875rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-col h4 {
+      color: #FFFFFF;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand-title {
+      color: #FFFFFF;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-desc {
+      line-height: 1.6;
+      color: #94A3B8;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .footer-links a {
+      color: #CBD5E1;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    .footer-address {
+      font-style: normal;
+      line-height: 1.6;
+      color: #CBD5E1;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1E293B;
+      padding-top: 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #64748B;
+    }
+
+    .footer-bottom a {
+      color: #94A3B8;
+      text-decoration: underline;
+    }
+
+    .footer-bottom a:hover {
+      color: #FFFFFF;
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .dl-statutory-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-content {
+        height: auto;
+        padding: 1rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+      }
+
+      .hero-headline {
+        font-size: 1.85rem;
+      }
+
+      .hero-subtext {
+        font-size: 1rem;
+      }
+
+      .statutory-pill-bar {
+        flex-direction: column;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta-actions {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .btn-action-primary, .btn-action-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="brand-wordmark" aria-label="M.S TRADING COMPANY Homepage">
+        <span class="brand-title">M.S TRADING COMPANY</span>
+        <span class="brand-subtitle">Wholesale Hardware &amp; Building Supplies</span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#products">Product Lines</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#verification">Business &amp; Legal Info</a></li>
+          <li><a href="#contact" class="btn-nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-badge-container">
+          <span class="hero-badge">Established 2016 • Wholesale Building &amp; Hardware Suppliers • Malappuram, Kerala</span>
+        </div>
+        <h1 class="hero-headline">Wholesale Hardware, Sanitary Fittings, Flat Glass &amp; Construction Supplies</h1>
+        <p class="hero-subtext">Supplying contractors, builders, and retail hardware dealers across Kerala with reliable wholesale hardware, plumbing and sanitary fixtures, architectural flat glass, and construction tools from our Inkel Greens hub in Malappuram.</p>
+
+        <!-- Quick Statutory Pill Bar -->
+        <!-- CLIENT_LEGAL_CONFIG_START -->
+        <div class="statutory-pill-bar" aria-label="Key Statutory Identifiers">
+          <div class="stat-pill">
+            <span>Legal &amp; Trade Name:</span>
+            <strong>M.S TRADING COMPANY</strong>
+          </div>
+          <div class="stat-pill">
+            <span>GSTIN:</span>
+            <span class="code-val">32ABDFM9538P1ZO</span>
+          </div>
+          <div class="stat-pill">
+            <span>Constitution:</span>
+            <strong>Partnership</strong>
+          </div>
+        </div>
+        <!-- CLIENT_LEGAL_CONFIG_END -->
+      </div>
+    </section>
+
+    <!-- Wholesale Product Categories Grid (B2B Catalog) -->
+    <section id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">B2B Wholesale Catalog</span>
+          <h2 class="section-title">Wholesale Product Categories</h2>
+          <p class="section-desc">Bulk fulfillment and wholesale trade distribution for retail merchants, building contractors, and commercial infrastructure projects across Kerala.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Category 1 -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <div class="product-index">Category 01</div>
+              <h3 class="product-name">Sanitary Fittings &amp; Plumbing Fixtures</h3>
+              <p class="product-desc">Valves, faucets, bathroom &amp; kitchen plumbing hardware, CP fittings, precision bib cocks, connection pipes, and industrial flow management fittings.</p>
+            </div>
+            <div class="product-card-bottom">
+              <span class="product-tag">Bulk Wholesale</span>
+              <a href="#contact" class="product-action-link">Request Quote &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 2 -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <div class="product-index">Category 02</div>
+              <h3 class="product-name">Architectural Flat Glass</h3>
+              <p class="product-desc">Clear, toughened, and specialty sheet glass for commercial &amp; residential builds, storefront partitions, architectural glazing, and structural applications.</p>
+            </div>
+            <div class="product-card-bottom">
+              <span class="product-tag">Architectural Grade</span>
+              <a href="#contact" class="product-action-link">Request Quote &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 3 -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <div class="product-index">Category 03</div>
+              <h3 class="product-name">Hand Tools &amp; Workshop Equipment</h3>
+              <p class="product-desc">Hammers, saws, screwdrivers, wrenches, and professional hand tools built for precision fabrication, on-site tradesmen, and commercial mechanical contractors.</p>
+            </div>
+            <div class="product-card-bottom">
+              <span class="product-tag">Professional Grade</span>
+              <a href="#contact" class="product-action-link">Request Quote &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 4 -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <div class="product-index">Category 04</div>
+              <h3 class="product-name">Builders Hardware &amp; Fasteners</h3>
+              <p class="product-desc">Door/window fittings, hinges, locks, and structural hardware, high-tensile anchor bolts, precision screws, and architectural security fittings.</p>
+            </div>
+            <div class="product-card-bottom">
+              <span class="product-tag">Structural Hardware</span>
+              <a href="#contact" class="product-action-link">Request Quote &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 5 -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <div class="product-index">Category 05</div>
+              <h3 class="product-name">Construction Equipment &amp; Site Supplies</h3>
+              <p class="product-desc">Heavy-duty construction tools and project consumables, scaffolding attachments, safety gear, masonry tools, and industrial job-site handling supplies.</p>
+            </div>
+            <div class="product-card-bottom">
+              <span class="product-tag">Heavy Duty</span>
+              <a href="#contact" class="product-action-link">Request Quote &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">Established November 2016</span>
+            <h2 class="section-title">About M.S TRADING COMPANY</h2>
+            <p><strong>M.S TRADING COMPANY</strong> is a premier wholesale supplier based in Malappuram, Kerala, dedicated to serving civil contractors, real estate developers, and hardware retail merchants with consistent, high-standard construction and building supplies.</p>
+            <p>Established in November 2016 as a registered Partnership firm, we maintain robust inventory pipelines for sanitary fittings, flat glass sheets, commercial hand tools, and builders hardware. We are fully compliant with Indian Goods and Services Tax (GST) regulations, ensuring seamless B2B wholesale tax credit invoicing on every bulk shipment.</p>
+            <p>Our centralized distribution facility at Inkel Greens, Panakkad, Oorakam provides rapid fulfillment and logistics connectivity throughout Northern Kerala and neighboring commercial corridors.</p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h4>GST-Compliant Tax Invoicing</h4>
+              <p>Every commercial consignment is accompanied by formal GST e-way bills and input tax credit (ITC) documentation.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>Strategic Inkel Greens Warehouse</h4>
+              <p>Centralized bulk fulfillment from Plot No.38F, Inkel Greens, Panakkad, Oorakam, Malappuram ensures dependable dispatch turnaround.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>Direct Trade Partner Support</h4>
+              <p>Direct communication with executive trade desk managers for customized B2B price lists, volume contracts, and specifications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registered Business & Legal Information Section -->
+    <section id="verification" class="verification-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Statutory Transparency</span>
+          <h2 class="section-title">Registered Business &amp; Legal Information</h2>
+          <p class="section-desc">Official corporate and statutory particulars for trade verification, Meta Business Portfolio verification, and vendor credentialing.</p>
+        </div>
+
+        <div class="verification-card">
+          <div class="card-banner">
+            <h3>Statutory Business Credentials &amp; Verification Card</h3>
+            <span class="banner-status">&#10003; GST Active &amp; Verified</span>
+          </div>
+
+          <!-- CLIENT_LEGAL_CONFIG_START -->
+          <dl class="dl-statutory-grid">
+            <div class="dl-item">
+              <dt>Legal Business Name</dt>
+              <dd>M.S TRADING COMPANY</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Trade Name / Brand</dt>
+              <dd>M.S TRADING COMPANY</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Constitution of Business</dt>
+              <dd>Partnership</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>GST Registration Number (GSTIN)</dt>
+              <dd class="mono-code">32ABDFM9538P1ZO</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Managing Partner</dt>
+              <dd>Arinari Sumesh</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Date of Establishment</dt>
+              <dd>November 2016</dd>
+            </div>
+
+            <div class="dl-item full-width">
+              <dt>Principal Place of Business</dt>
+              <dd>
+                <address>
+                  Plot No.38F, Inkel Greens, Panakkad, Oorakam, Malappuram, Kerala 676510, India
+                </address>
+              </dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Customer &amp; Trade Support Phone</dt>
+              <dd><a href="tel:+919995137733">+91 9995137733</a></dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Customer &amp; Trade Support Email</dt>
+              <dd><a href="mailto:way4ms@gmail.com">way4ms@gmail.com</a></dd>
+            </div>
+          </dl>
+          <!-- CLIENT_LEGAL_CONFIG_END -->
+        </div>
+
+        <!-- Contact & B2B Inquiry Box -->
+        <div id="contact" class="contact-cta-box">
+          <div class="cta-text">
+            <h4>Ready to Place a Bulk Order or Trade Inquiry?</h4>
+            <p>Connect directly with our wholesale trade desk for inventory availability, contractor pricing, and distribution terms.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="tel:+919995137733" class="btn-action-primary">Call +91 9995137733</a>
+            <a href="mailto:way4ms@gmail.com" class="btn-action-secondary">Email way4ms@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-col">
+          <!-- CLIENT_LEGAL_CONFIG_START -->
+          <div class="footer-brand-title">M.S TRADING COMPANY</div>
+          <!-- CLIENT_LEGAL_CONFIG_END -->
+          <p class="footer-desc">Wholesale distributor of sanitary fittings, architectural flat glass, builders hardware, professional hand tools, and heavy-duty construction supplies based in Malappuram, Kerala.</p>
+          <p class="footer-desc"><strong>GSTIN:</strong> 32ABDFM9538P1ZO<br /><strong>Constitution:</strong> Partnership</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation &amp; Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Wholesale Product Catalog</a></li>
+            <li><a href="#about">About Our Firm</a></li>
+            <li><a href="#verification">Statutory Business Credentials</a></li>
+            <li><a href="#contact">Trade Inquiries &amp; Support</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy &amp; Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- Registered Address & Contact -->
+        <div class="footer-col">
+          <h4>Registered Office</h4>
+          <!-- CLIENT_LEGAL_CONFIG_START -->
+          <address class="footer-address">
+            <strong>M.S TRADING COMPANY</strong><br />
+            Plot No.38F, Inkel Greens, Panakkad, Oorakam,<br />
+            Malappuram, Kerala 676510, India<br /><br />
+            <strong>Managing Partner:</strong> Arinari Sumesh<br />
+            <strong>Phone:</strong> <a href="tel:+919995137733" style="color: #CBD5E1;">+91 9995137733</a><br />
+            <strong>Email:</strong> <a href="mailto:way4ms@gmail.com" style="color: #CBD5E1;">way4ms@gmail.com</a>
+          </address>
+          <!-- CLIENT_LEGAL_CONFIG_END -->
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <!-- CLIENT_LEGAL_CONFIG_START -->
+        <div>&copy; 2026 M.S TRADING COMPANY | GSTIN: 32ABDFM9538P1ZO</div>
+        <div>Plot No.38F, Inkel Greens, Panakkad, Oorakam, Malappuram, Kerala 676510</div>
+        <!-- CLIENT_LEGAL_CONFIG_END -->
+        <div>
+          <a href="privacy-policy.html">Privacy Policy &amp; Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
