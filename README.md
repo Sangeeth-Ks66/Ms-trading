@@ -11,7 +11,7 @@ Production-ready, zero-dependency static HTML5 and CSS3 wholesale storefront and
 - **Constitution of Business:** Partnership
 - **GSTIN:** `32ABDFM9538P1ZO`
 - **Managing Partner:** Arinari Sumesh
-- **Principal Place of Business:** Plot No.38F, Inkel Greens, Panakkad, Oorakam, Malappuram, Kerala 676510, India
+- **Principal Place of Business:** Plot No.38F, Inkel Greens, Panakkad, Oorakam, Malappuram, Kerala 676519, India
 - **Phone:** +91 9995137733
 - **Email:** way4ms@gmail.com
 - **Established:** November 2016
